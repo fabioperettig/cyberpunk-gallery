@@ -1,0 +1,63 @@
+body{
+    margin: 0 0;
+    background-color: black;
+    font-family: 'Jura', sans-serif;
+}
+
+.header {
+    background-color: black;
+    padding: 280px 10px;
+    z-index: 1;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    top: 0;
+    width: 100%;
+    transition: .35s ease;
+}
+
+.gallery {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding-top: 200px;
+}
+
+img {
+    width: 20rem;
+    /*opacity: .25;*/
+    transition: all .5s ease;
+    margin: .25rem;
+}
+
+img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.videoBG {
+    position: fixed;
+    margin: 0 0;
+    z-index: -1;
+    /*opacity: .05;
+    filter: grayscale(100%);*/
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .videoBG {
+        width:100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .videoBG {
+        width:auto;
+        height:100%;
+        margin: 0 auto;
+    }
+}
